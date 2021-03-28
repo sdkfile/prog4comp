@@ -9,7 +9,7 @@ def trapezoidal(f, a, b, n):
 
 def application():
     from math import exp
-    v = lambda t: 3*(t**2)*exp(t**3)
+    v = lambda t: 3 * (t**2) * exp(t**3)
     n = input('n: ')
     numerical = trapezoidal(v, 0, 1, n)
 
@@ -18,6 +18,7 @@ def application():
     exact = V(1) - V(0)
     error = exact - numerical
     print('n=%d: %.16f, error: %g' % (n, numerical, error))
+
 
 if __name__ == '__main__':
     application()

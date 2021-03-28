@@ -40,7 +40,7 @@ def test_rectangle_linear():
     a = 1.2
     b = 4.4
     exact = F(b) - F(a)
-    tol = 1E-13 # changed tol
+    tol = 1E-13  # changed tol
     for n in 2, 20, 21:
         h = float(b - a) / n
         C = n * (0.5 * slope * h**2)    # Correction term
